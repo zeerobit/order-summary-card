@@ -121,14 +121,14 @@ select {
 
 body {
   font-family: Red Hat Display, sans-serif;
-  background: url(/images/pattern-background-mobile.svg) top/contain no-repeat;
+  background: url("../images/pattern-background-mobile.svg") top/contain no-repeat;
   background-color: #e0e8ff;
   display: grid;
   place-content: center;
 }
 @media only screen and (min-width: 62rem) {
   body {
-    background: url(/images/pattern-background-desktop.svg) top/contain no-repeat;
+    background: url("../images/pattern-background-desktop.svg") top/contain no-repeat;
     background-color: #e0e8ff;
   }
 }

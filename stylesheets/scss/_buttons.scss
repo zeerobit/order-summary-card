@@ -10,12 +10,10 @@
 
   // media query for desktop
   @include config.responsive(desktop) {
-    max-width: 25rem;
-  }
-
-  &:hover {
-    text-decoration: none;
-    opacity: 0.7;
+    &:hover {
+      text-decoration: none;
+      opacity: 0.7;
+    }
   }
 }
 
@@ -32,11 +30,9 @@
 
   // media query for desktop
   @include config.responsive(desktop) {
-    max-width: 25rem;
-  }
-
-  &:hover {
-    opacity: 0.7;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
 
@@ -50,10 +46,8 @@
 
   // media query for desktop
   @include config.responsive(desktop) {
-    max-width: 25rem;
-  }
-
-  &:hover {
-    color: config.$dark_blue;
+    &:hover {
+      color: config.$dark_blue;
+    }
   }
 }

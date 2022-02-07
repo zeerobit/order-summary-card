@@ -84,13 +84,10 @@ select {
   display: block;
 }
 @media only screen and (min-width: 62rem) {
-  .pricing-btn {
-    max-width: 25rem;
+  .pricing-btn:hover {
+    text-decoration: none;
+    opacity: 0.7;
   }
-}
-.pricing-btn:hover {
-  text-decoration: none;
-  opacity: 0.7;
 }
 
 .pay-btn {
@@ -104,12 +101,9 @@ select {
   box-shadow: 0px 12px 15px rgba(114, 128, 167, 0.4);
 }
 @media only screen and (min-width: 62rem) {
-  .pay-btn {
-    max-width: 25rem;
+  .pay-btn:hover {
+    opacity: 0.7;
   }
-}
-.pay-btn:hover {
-  opacity: 0.7;
 }
 
 .cancel-btn {
@@ -120,12 +114,9 @@ select {
   margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 62rem) {
-  .cancel-btn {
-    max-width: 25rem;
+  .cancel-btn:hover {
+    color: #1f2f56;
   }
-}
-.cancel-btn:hover {
-  color: #1f2f56;
 }
 
 body {

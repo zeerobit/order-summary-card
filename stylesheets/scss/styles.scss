@@ -1,0 +1,88 @@
+@use "reset";
+@use "config";
+@use "buttons";
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  font-family: config.$font-stack;
+  background: url(/images/pattern-background-mobile.svg) top/contain no-repeat;
+  background-color: config.$pale_blue;
+  display: grid;
+  place-content: center;
+
+  // media query for desktop layout
+  @include config.responsive(desktop) {
+    background: url(/images/pattern-background-desktop.svg) top/contain no-repeat;
+    background-color: config.$pale_blue;
+  }
+}
+
+.order-summary__container {
+  // media query for desktop layout
+  @include config.responsive(desktop) {
+    max-width: 25rem;
+  }
+
+  max-width: 20.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  @include config.flex(column);
+  gap: 1.5rem;
+
+  .hero__img {
+    height: 10rem;
+    width: 100%;
+
+    // media query for desktop layout
+    @include config.responsive(desktop) {
+      & {
+        height: 13.8rem;
+      }
+    }
+  }
+
+  h1 {
+    color: config.$dark_blue;
+    font-weight: config.weight(extra__bold);
+  }
+
+  p {
+    text-align: center;
+    padding: 0 2rem;
+    color: config.$desaturated_blue;
+  }
+
+  .pricing {
+    @include config.flex(row);
+    justify-content: space-around;
+    border-radius: 0.5rem;
+    background-color: config.$very_pale_blue;
+    width: 18rem;
+
+    .pricing__plan {
+      list-style: none;
+      padding: 0;
+
+      li {
+        color: config.$desaturated_blue;
+        font-weight: config.weight(medium);
+
+        .plan-type {
+          font-weight: config.weight(extra__bold);
+          color: config.$dark_blue;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+}

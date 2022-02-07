@@ -1,0 +1,35 @@
+// primary colors
+$pale_blue: hsl(225, 100%, 94%);
+$bright_blue: hsl(245, 75%, 52%);
+
+// neutral colors
+$very_pale_blue: hsl(225, 100%, 98%);
+$desaturated_blue: hsl(224, 23%, 55%);
+$dark_blue: hsl(223, 47%, 23%);
+
+$font-weights: (
+  "medium": 500,
+  "bold": 700,
+  "extra__bold": 900,
+);
+
+// font-family
+$font-stack: Red Hat Display, sans-serif;
+
+@mixin flex($direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 62rem) {
+      @content;
+    }
+  }
+}
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}

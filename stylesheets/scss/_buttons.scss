@@ -8,6 +8,11 @@
   font-weight: config.weight(bold);
   display: block;
 
+  // media query for desktop
+  @include config.responsive(desktop) {
+    max-width: 25rem;
+  }
+
   &:hover {
     text-decoration: none;
     opacity: 0.7;
@@ -25,6 +30,11 @@
   font-weight: config.weight(bold);
   box-shadow: 0px 12px 15px rgba(config.$desaturated_blue, 0.4);
 
+  // media query for desktop
+  @include config.responsive(desktop) {
+    max-width: 25rem;
+  }
+
   &:hover {
     opacity: 0.7;
   }
@@ -37,6 +47,11 @@
   color: config.$desaturated_blue;
   font-weight: config.weight(bold);
   margin-bottom: 1.5rem;
+
+  // media query for desktop
+  @include config.responsive(desktop) {
+    max-width: 25rem;
+  }
 
   &:hover {
     color: config.$dark_blue;

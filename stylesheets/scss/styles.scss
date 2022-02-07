@@ -19,9 +19,14 @@ body {
 }
 
 .order-summary__container {
-  // media query for desktop layout
+  // media query for desktop
   @include config.responsive(desktop) {
     max-width: 25rem;
+  }
+
+  // media query for phone size lower than 375px
+  @include config.responsive(small-phone) {
+    margin: 0.5rem;
   }
 
   max-width: 20.5rem;
@@ -35,7 +40,7 @@ body {
     height: 10rem;
     width: 100%;
 
-    // media query for desktop layout
+    // media query for desktop
     @include config.responsive(desktop) {
       & {
         height: 13.8rem;

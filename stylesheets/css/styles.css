@@ -142,6 +142,11 @@ body {
     max-width: 25rem;
   }
 }
+@media only screen and (max-width: 22.5rem) {
+  .order-summary__container {
+    margin: 0.5rem;
+  }
+}
 .order-summary__container .hero__img {
   height: 10rem;
   width: 100%;

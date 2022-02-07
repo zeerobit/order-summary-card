@@ -16,15 +16,25 @@ $font-weights: (
 // font-family
 $font-stack: Red Hat Display, sans-serif;
 
+// media queries
+$breakpoints: (
+  "small-phone": 20rem,
+  "desktop": 62rem,
+);
+
 @mixin flex($direction) {
   display: flex;
   align-items: center;
   flex-direction: $direction;
 }
 
-@mixin responsive($breakpoint) {
-  @if $breakpoint == desktop {
+@mixin responsive($breakpoints) {
+  @if $breakpoints == desktop {
     @media only screen and (min-width: 62rem) {
+      @content;
+    }
+  } @else if $breakpoints == small-phone {
+    @media only screen and (max-width: 22.5rem) {
       @content;
     }
   }

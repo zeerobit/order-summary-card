@@ -6,14 +6,14 @@
 
 body {
   font-family: config.$font-stack;
-  background: url(./images/pattern-background-mobile.svg) top/contain no-repeat;
+  background: url("../images/pattern-background-mobile.svg") top/contain no-repeat;
   background-color: config.$pale_blue;
   display: grid;
   place-content: center;
 
   // media query for desktop layout
   @include config.responsive(desktop) {
-    background: url(./images/pattern-background-desktop.svg) top/contain no-repeat;
+    background: url("../images/pattern-background-desktop.svg") top/contain no-repeat;
     background-color: config.$pale_blue;
   }
 }

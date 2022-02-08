@@ -121,14 +121,14 @@ select {
 
 body {
   font-family: Red Hat Display, sans-serif;
-  background: url("../images/pattern-background-mobile.svg") top/contain no-repeat;
+  background: url(https://user-images.githubusercontent.com/49578782/152895356-6e3089d2-ca35-47dc-a218-8fa80785035d.svg) top/contain no-repeat;
   background-color: #e0e8ff;
   display: grid;
   place-content: center;
 }
 @media only screen and (min-width: 62rem) {
   body {
-    background: url("../images/pattern-background-desktop.svg") top/contain no-repeat;
+    background: url(https://user-images.githubusercontent.com/49578782/152895306-c24269c4-1e22-4956-95bd-49cb50437cd2.svg) top/contain no-repeat;
     background-color: #e0e8ff;
   }
 }
@@ -154,7 +154,7 @@ body {
   }
 }
 .order-summary__container .hero__img {
-  background: url(./images/illustration-hero.svg) top/cover no-repeat;
+  background: url(https://user-images.githubusercontent.com/49578782/152894668-8ee2222b-95d3-42d8-9504-401ebf3b9d9b.svg) top/cover no-repeat;
   height: 10rem;
   width: 100%;
 }

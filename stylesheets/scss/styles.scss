@@ -58,10 +58,15 @@ body {
 
   .pricing {
     @include config.flex(row);
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 0.5rem;
     background-color: config.$very_pale_blue;
     width: 18rem;
+
+    // // media query for desktop
+    @include config.responsive(desktop) {
+      width: 20rem;
+    }
 
     .pricing__plan {
       list-style: none;

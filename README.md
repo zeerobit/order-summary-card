@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://www.frontendmentor.io/solutions/order-summary-card-scss-and-flexbox-dicpalbNt
-- Live Site URL: https://zeerobit.github.io/order-summary-card/
+- Live Site URL: https://order-summary-card-732.pages.dev/
 
 ## My process
 

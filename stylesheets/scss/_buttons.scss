@@ -1,6 +1,6 @@
 @use "config";
 
-// buttong to change to yearly or monthly plan
+// button to change payment type
 .pricing-btn {
   text-decoration: underline;
   font-size: 0.9rem;
@@ -18,7 +18,7 @@
   }
 }
 
-// button to proceed to payment
+// button for payment
 .pay-btn {
   display: block;
   text-decoration: none;
@@ -40,7 +40,7 @@
   }
 }
 
-// button to cancel order
+// button for cancellation
 .cancel-btn {
   display: block;
   text-decoration: none;

@@ -16,7 +16,7 @@ $font-weights: (
 // font-family
 $font-stack: Red Hat Display, sans-serif;
 
-// media queries
+// variable media queries
 $breakpoints: (
   "small-phone": 20rem,
   "desktop": 62rem,
@@ -28,6 +28,7 @@ $breakpoints: (
   flex-direction: $direction;
 }
 
+// media queries
 @mixin responsive($breakpoints) {
   @if $breakpoints == desktop {
     @media only screen and (min-width: 62rem) {
@@ -40,6 +41,7 @@ $breakpoints: (
   }
 }
 
+// function for font-weight
 @function weight($weight-name) {
   @return map-get($font-weights, $weight-name);
 }

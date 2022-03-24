@@ -6,52 +6,55 @@
   font-size: 0.9rem;
   color: config.$bright_blue;
   font-weight: config.weight(bold);
-  display: inline-block;
-  padding-left: 3.7rem;
+  border-style: none;
+  background: transparent;
 
   // media query for desktop
   @include config.responsive(desktop) {
-    &:hover {
+    &:hover,
+    &:focus {
       text-decoration: none;
       opacity: 0.7;
+      cursor: pointer;
     }
   }
 }
 
 // button for payment
 .pay-btn {
-  display: block;
-  text-decoration: none;
+  border-style: none;
   border-radius: 0.5rem;
   background-color: config.$bright_blue;
   color: #fff;
-  padding: 0.7rem 4rem;
+  padding: 0.7rem 0rem;
   font-weight: config.weight(bold);
   box-shadow: 0px 12px 15px rgba(config.$desaturated_blue, 0.4);
+  width: 100%;
 
   // media query for desktop
   @include config.responsive(desktop) {
-    & {
-      padding: 0.8rem 5rem;
-    }
-    &:hover {
+    &:hover,
+    &:focus {
       opacity: 0.7;
+      cursor: pointer;
     }
   }
 }
 
 // button for cancellation
 .cancel-btn {
-  display: block;
   text-decoration: none;
+  border-style: none;
+  background: transparent;
   color: config.$desaturated_blue;
   font-weight: config.weight(bold);
-  margin-bottom: 1.5rem;
 
   // media query for desktop
   @include config.responsive(desktop) {
-    &:hover {
+    &:hover,
+    &:focus {
       color: config.$dark_blue;
+      cursor: pointer;
     }
   }
 }

@@ -81,45 +81,45 @@ select {
   font-size: 0.9rem;
   color: #3829e0;
   font-weight: 700;
-  display: inline-block;
-  padding-left: 3.7rem;
+  border-style: none;
+  background: transparent;
 }
 @media only screen and (min-width: 62rem) {
-  .pricing-btn:hover {
+  .pricing-btn:hover, .pricing-btn:focus {
     text-decoration: none;
     opacity: 0.7;
+    cursor: pointer;
   }
 }
 
 .pay-btn {
-  display: block;
-  text-decoration: none;
+  border-style: none;
   border-radius: 0.5rem;
   background-color: #3829e0;
   color: #fff;
-  padding: 0.7rem 4rem;
+  padding: 0.7rem 0rem;
   font-weight: 700;
   box-shadow: 0px 12px 15px rgba(114, 128, 167, 0.4);
+  width: 100%;
 }
 @media only screen and (min-width: 62rem) {
-  .pay-btn {
-    padding: 0.8rem 5rem;
-  }
-  .pay-btn:hover {
+  .pay-btn:hover, .pay-btn:focus {
     opacity: 0.7;
+    cursor: pointer;
   }
 }
 
 .cancel-btn {
-  display: block;
   text-decoration: none;
+  border-style: none;
+  background: transparent;
   color: #7280a7;
   font-weight: 700;
-  margin-bottom: 1.5rem;
 }
 @media only screen and (min-width: 62rem) {
-  .cancel-btn:hover {
+  .cancel-btn:hover, .cancel-btn:focus {
     color: #1f2f56;
+    cursor: pointer;
   }
 }
 
@@ -129,7 +129,7 @@ body {
   background-color: #e0e8ff;
   display: grid;
   place-content: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 @media only screen and (min-width: 62rem) {
   body {
@@ -138,66 +138,61 @@ body {
   }
 }
 
-.order-summary__container {
+.card__container {
   max-width: 20.5rem;
   background-color: #fff;
   border-radius: 1rem;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 @media only screen and (min-width: 62rem) {
-  .order-summary__container {
+  .card__container {
     max-width: 25rem;
   }
 }
-.order-summary__container .hero__img {
-  background: url(/images/illustration-hero.svg) top/cover no-repeat;
-  height: 10rem;
+.card__container .hero__img {
+  height: 100%;
   width: 100%;
 }
-@media only screen and (min-width: 62rem) {
-  .order-summary__container .hero__img {
-    height: 13.8rem;
-  }
+.card__container .card__content {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
-.order-summary__container h1 {
+.card__container h1 {
   color: #1f2f56;
   font-weight: 900;
 }
-.order-summary__container p {
+.card__container p {
   text-align: center;
-  padding: 0 2rem;
   color: #7280a7;
 }
-.order-summary__container .pricing {
+.card__container .pricing {
   display: flex;
-  align-items: center;
   flex-direction: row;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-around;
   border-radius: 0.5rem;
   background-color: #f5f7ff;
-  width: 18rem;
+  width: 100%;
+}
+.card__container .pricing .pricing__plan {
+  list-style: none;
+  margin-left: -3.5rem;
 }
 @media only screen and (min-width: 62rem) {
-  .order-summary__container .pricing {
-    width: 20rem;
+  .card__container .pricing .pricing__plan {
+    margin-left: -5rem;
   }
 }
-.order-summary__container .pricing .pricing__plan {
-  list-style: none;
-  padding: 0;
-}
-.order-summary__container .pricing .pricing__plan li {
-  color: #7280a7;
-  font-weight: 500;
-}
-.order-summary__container .pricing .pricing__plan li .plan-type {
+.card__container .pricing .pricing__plan .plan__type {
   font-weight: 900;
   color: #1f2f56;
-  display: block;
+}
+.card__container .pricing .pricing__plan .plan__price {
+  color: #7280a7;
+  font-weight: 500;
 }
 
 footer {

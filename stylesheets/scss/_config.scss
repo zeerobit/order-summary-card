@@ -7,26 +7,31 @@ $very_pale_blue: hsl(225, 100%, 98%);
 $desaturated_blue: hsl(224, 23%, 55%);
 $dark_blue: hsl(223, 47%, 23%);
 
+// font-stack
 $font-weights: (
   "medium": 500,
   "bold": 700,
   "extra__bold": 900,
 );
 
-// font-family
-$font-stack: Red Hat Display, sans-serif;
+// function for font-weight
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+$font-family: Red Hat Display, sans-serif;
+
+// flexbox
+@mixin flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
 
 // variable media queries
 $breakpoints: (
   "small-phone": 20rem,
   "desktop": 62rem,
 );
-
-@mixin flex($direction) {
-  display: flex;
-  align-items: center;
-  flex-direction: $direction;
-}
 
 // media queries
 @mixin responsive($breakpoints) {
@@ -39,9 +44,4 @@ $breakpoints: (
       @content;
     }
   }
-}
-
-// function for font-weight
-@function weight($weight-name) {
-  @return map-get($font-weights, $weight-name);
 }
